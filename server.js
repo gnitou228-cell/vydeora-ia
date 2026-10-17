@@ -44,7 +44,15 @@ app.post('/api/debug-log', (req, res) => {
 });
 
 // Serve uploaded avatars
-app.use('/uploads/avatars', express.static(path.join(__dirname, 'uploads', 'avatars'), {
+const isVercelEnv = Boolean(process.env.VERCEL);
+const avatarsStaticDir = isVercelEnv ? path.join('/tmp', 'avatars') : path.join(__dirname, 'uploads', 'avatars');
+try {
+  if (!fs.existsSync(avatarsStaticDir)) {
+    fs.mkdirSync(avatarsStaticDir, { recursive: true });
+  }
+} catch (e) {}
+
+app.use('/uploads/avatars', express.static(avatarsStaticDir, {
   etag: false,
   maxAge: '1h'
 }));
@@ -586,6 +594,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 VYDEORA Server running at http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 VYDEORA Server running at http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

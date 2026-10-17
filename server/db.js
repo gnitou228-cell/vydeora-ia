@@ -2,13 +2,25 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const isVercel = Boolean(process.env.VERCEL);
+const DATA_DIR = isVercel ? '/tmp' : path.join(__dirname, '..', 'data');
 const DB_FILE = path.join(DATA_DIR, 'database.json');
+const SEED_FILE = path.join(__dirname, '..', 'data', 'database.json');
 
-// Ensure data directory exists
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+// Ensure data directory exists and seed initial database on Vercel
+function ensureDbInit() {
+  try {
+    if (!fs.existsSync(DATA_DIR)) {
+      fs.mkdirSync(DATA_DIR, { recursive: true });
+    }
+    if (isVercel && !fs.existsSync(DB_FILE) && fs.existsSync(SEED_FILE)) {
+      fs.copyFileSync(SEED_FILE, DB_FILE);
+    }
+  } catch (err) {
+    console.warn('DB init warning:', err.message);
+  }
 }
+ensureDbInit();
 
 // Initial default schema
 const defaultSchema = {
@@ -22,29 +34,42 @@ const defaultSchema = {
   sessions: {}
 };
 
+let memCache = null;
+
 function readDb() {
   try {
+    if (memCache) return memCache;
+    ensureDbInit();
     if (!fs.existsSync(DB_FILE)) {
+      if (fs.existsSync(SEED_FILE)) {
+        const seedData = JSON.parse(fs.readFileSync(SEED_FILE, 'utf8'));
+        memCache = seedData;
+        return seedData;
+      }
       writeDb(defaultSchema);
+      memCache = defaultSchema;
       return defaultSchema;
     }
     const data = fs.readFileSync(DB_FILE, 'utf8');
-    return JSON.parse(data);
+    memCache = JSON.parse(data);
+    return memCache;
   } catch (err) {
     console.error('Error reading database file, returning default schema:', err.message);
+    if (memCache) return memCache;
     return defaultSchema;
   }
 }
 
 function writeDb(data) {
+  memCache = data;
   try {
+    ensureDbInit();
     // Atomic write via temp file
     const tempFile = `${DB_FILE}.tmp.${Date.now()}`;
     fs.writeFileSync(tempFile, JSON.stringify(data, null, 2), 'utf8');
     fs.renameSync(tempFile, DB_FILE);
   } catch (err) {
-    console.error('Error writing database file:', err.message);
-    throw err;
+    console.error('Error writing database file (using in-memory):', err.message);
   }
 }
 

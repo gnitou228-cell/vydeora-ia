@@ -2,10 +2,15 @@ const fs = require('fs');
 const path = require('path');
 const db = require('./db');
 
-const UPLOADS_DIR = path.join(__dirname, '..', 'uploads', 'avatars');
+const isVercel = Boolean(process.env.VERCEL);
+const UPLOADS_DIR = isVercel ? path.join('/tmp', 'avatars') : path.join(__dirname, '..', 'uploads', 'avatars');
 
-if (!fs.existsSync(UPLOADS_DIR)) {
-  fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+try {
+  if (!fs.existsSync(UPLOADS_DIR)) {
+    fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+  }
+} catch (err) {
+  console.warn('Avatar directory init warning:', err.message);
 }
 
 function handleAvatarUpload(userId, dataUrl) {
