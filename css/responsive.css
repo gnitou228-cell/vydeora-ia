@@ -1,0 +1,429 @@
+/* ==========================================================================
+   VYDEORA STRICT RESPONSIVE DESIGN & ADAPTATION RULES
+   Breakpoints:
+     - Large Desktop:  >= 1440px
+     - Desktop:        1024px – 1439px
+     - Tablet:         768px – 1023px
+     - Standard Mobile:375px – 767px
+     - Small Mobile:   320px – 374px
+   ========================================================================== */
+
+/* ==========================================================================
+   1. LARGE DESKTOP (>= 1440px)
+   ========================================================================== */
+@media (min-width: 1440px) {
+  .dashboard-grid {
+    max-width: 1680px;
+  }
+
+  .hero-banner {
+    padding: 36px 44px;
+  }
+
+  .stat-card {
+    padding: 20px 22px;
+  }
+}
+
+/* ==========================================================================
+   2. DESKTOP & TABLET LANDSCAPE (1024px - 1439px)
+   ========================================================================== */
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .hero-row {
+    grid-template-columns: 1fr 240px;
+  }
+
+  .dashboard-content-split {
+    grid-template-columns: 1fr 310px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+  }
+
+  .stat-card {
+    padding: 14px 14px;
+  }
+
+  .stat-value {
+    font-size: 1.3rem;
+  }
+}
+
+/* ==========================================================================
+   3. TABLET (768px - 1023px)
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* Sidebar Drawer on Tablet */
+  .app-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 150;
+    transform: translateX(-100%);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .app-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close-btn {
+    display: flex;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .hero-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr 280px;
+    padding: 24px;
+  }
+
+  .dashboard-content-split {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .quick-generator-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .editor-main-area {
+    grid-template-columns: 1fr;
+  }
+
+  .view-viewport {
+    padding: 20px 20px 40px;
+  }
+}
+
+/* ==========================================================================
+   4. STANDARD MOBILE (375px - 767px)
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* Layout adjustments */
+  :root {
+    --topbar-height: 60px;
+  }
+
+  .app-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 280px;
+    max-width: 85vw;
+    z-index: 200;
+    transform: translateX(-100%);
+    box-shadow: 10px 0 40px rgba(0, 0, 0, 0.8);
+  }
+
+  .app-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-close-btn {
+    display: flex;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  /* Show Bottom Navigation Bar on Mobile */
+  .mobile-bottom-nav {
+    display: flex;
+  }
+
+  /* Prevent bottom nav from covering content */
+  .view-viewport {
+    padding: 16px 14px calc(var(--bottombar-height) + var(--safe-bottom) + 24px) 14px;
+  }
+
+  .app-topbar {
+    padding: 0 10px;
+    gap: 8px;
+  }
+
+  .topbar-left {
+    gap: 8px;
+    max-width: none;
+  }
+
+  .topbar-mobile-logo {
+    display: flex !important;
+  }
+
+  .topbar-search-box {
+    display: none; /* Replaced by search button modal trigger */
+  }
+
+  .topbar-search-mobile-btn {
+    display: flex !important;
+  }
+
+  .desktop-only-text {
+    display: none !important;
+  }
+
+  .topbar-right {
+    gap: 6px;
+  }
+
+  .topbar-user-name {
+    display: none;
+  }
+
+  .icon-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Hero Banner Mobile */
+  .hero-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+    gap: 18px;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 1.35rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.84rem;
+  }
+
+  .hero-prompt-box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .hero-prompt-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .hero-media-wrap {
+    justify-content: center;
+  }
+
+  .hero-laptop-img {
+    max-width: 280px;
+  }
+
+  /* Activity Stats Mobile */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* 5th stat card spans 2 columns so it looks balanced */
+  .stat-card:last-child {
+    grid-column: span 2;
+  }
+
+  .stat-card {
+    padding: 14px 12px;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+
+  /* Quick Generator Grid Mobile */
+  .quick-generator-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .quick-tool-card {
+    padding: 12px;
+  }
+
+  /* Transform Wide Table to Mobile Card Layout */
+  .mobile-table-card-view .data-table thead {
+    display: none;
+  }
+
+  .mobile-table-card-view .data-table,
+  .mobile-table-card-view .data-table tbody,
+  .mobile-table-card-view .data-table tr,
+  .mobile-table-card-view .data-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .mobile-table-card-view .data-table tr {
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--border-radius-md);
+    padding: 12px 14px;
+  }
+
+  .mobile-table-card-view .data-table td {
+    border: none;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile-table-card-view .data-table td::before {
+    content: attr(data-label);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+
+  .mobile-table-card-view .data-table td.cell-primary {
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 6px;
+  }
+
+  .mobile-table-card-view .data-table td.cell-primary::before {
+    display: none;
+  }
+
+  /* Video Studio & Stepper Mobile */
+  .studio-stepper {
+    padding: 12px 14px;
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .step-label {
+    display: none;
+  }
+
+  .studio-step-content {
+    padding: 18px 14px;
+  }
+
+  /* Video Editor Mobile */
+  .video-frame-container.ratio-16-9 {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-frame-container.ratio-9-16 {
+    width: 190px;
+    aspect-ratio: 9 / 16;
+  }
+
+  .video-frame-container.ratio-1-1 {
+    width: 240px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .editor-header-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  /* Modals Mobile */
+  .modal-box {
+    max-width: 100%;
+    max-height: calc(100vh - 24px);
+    border-radius: var(--border-radius-lg);
+  }
+
+  .modal-header, .modal-body, .modal-footer {
+    padding: 16px;
+  }
+}
+
+/* ==========================================================================
+   5. SMALL MOBILE (320px - 374px)
+   ========================================================================== */
+@media (max-width: 374px) {
+  html {
+    font-size: 13.5px;
+  }
+
+  .app-topbar {
+    padding: 0 6px;
+    gap: 4px;
+  }
+
+  .topbar-mobile-logo span {
+    font-size: 0.95rem;
+  }
+
+  #publicSiteLink {
+    display: none !important;
+  }
+
+  .view-viewport {
+    padding: 10px 8px calc(var(--bottombar-height) + var(--safe-bottom) + 16px) 8px;
+  }
+
+  .hero-banner {
+    padding: 14px 10px;
+    gap: 14px;
+  }
+
+  .hero-title {
+    font-size: 1.15rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.78rem;
+  }
+
+  .hero-prompt-input::placeholder {
+    font-size: 0.74rem;
+  }
+
+  .hero-laptop-img {
+    max-width: 220px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card:last-child {
+    grid-column: span 1;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .quick-start-item {
+    font-size: 0.78rem;
+    padding: 8px 8px;
+  }
+
+  .mobile-nav-item span {
+    font-size: 0.6rem;
+  }
+}

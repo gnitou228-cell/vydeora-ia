@@ -1,0 +1,1561 @@
+{
+  "users": [
+    {
+      "id": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "email": "creator_1792276460690@vydeora.com",
+      "passwordHash": "7870899da6fac295c483157889efa8239e484a98d9d3e321e477898cf690a35361f5f1c03be540fa3fcd4f9597e21a74795c2bb1011b584440384264fbeb6b47",
+      "salt": "7072f0930c8fff695434a1cbb25d32d9",
+      "createdAt": "2026-10-17T22:34:21.327Z"
+    },
+    {
+      "id": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "email": "creator_1792276492598@vydeora.com",
+      "passwordHash": "ba1a42ea01556b605d03815e4b4d0eb78347bf19872d922129b7e3e93285119e1cc553850a46f3ca03c6ce96875ec0923efd6276c39be8f6432dcc112e51ec8f",
+      "salt": "b909d762c448fa47637ed0971dc022c3",
+      "createdAt": "2026-10-17T22:34:52.769Z"
+    },
+    {
+      "id": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "email": "creator_1792276548141@vydeora.com",
+      "passwordHash": "3eab6d0616d092839b0515ec6eccea63d2f6ec571fe4e7b47adc9acf67a1a0d3f11afe8e21ee185ce5717e4835316ef55deb0cf10512a10b76af37f67f4fc399",
+      "salt": "95f3a1e93b1466b7ce87d494d43ba13c",
+      "createdAt": "2026-10-17T22:35:48.279Z"
+    },
+    {
+      "id": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "email": "independent_1792276548555@vydeora.com",
+      "passwordHash": "6620d3ab029d8f8ef9a6e7193d397909255b5851d3d42094620d5eff432817202e54a75f3a97d80f6136eaa13b77af61dbc9152e02d7c5b58b5cbf8fe049100c",
+      "salt": "5458746b0b3494c63735cffdc765357d",
+      "createdAt": "2026-10-17T22:35:48.643Z"
+    },
+    {
+      "id": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "email": "jeffmaxwell@gmail.com",
+      "passwordHash": "b6720c0f3371b9da56e9ac9e2835e23ffc33a850a78f2d04e6904f448c104f55698c4cde606f5cbbe7d05a8c41b88ad1fb44c6945f9d4472f3758ec218618d55",
+      "salt": "c3f7ef9a735d163f454e0674c45af996",
+      "createdAt": "2026-10-17T22:40:06.265Z"
+    },
+    {
+      "id": "bdca328b-2463-4b79-905d-234d98463f72",
+      "email": "creator_1792277198735@vydeora.com",
+      "passwordHash": "e04b9057a23b1649e36ff3dcbba51a9fce6d37658cc74cc8a8d97c63215c7b29c2c1b5b5945bfa6c7c0c07b30b056cfed587142677d343c6abb62c95040424fd",
+      "salt": "6d1bf4d53553d546c6afd63810ec6098",
+      "createdAt": "2026-10-17T22:46:38.893Z"
+    },
+    {
+      "id": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "email": "independent_1792277199129@vydeora.com",
+      "passwordHash": "0fd3443d9da67f9a05ea50c4161ec1f7aaa1f4ecbcc5507cea5cf2ca26f908ea7a34940beeb92ab3510dd5a3e3bd31e667b14d94d84a02b0d38bb0762ee8581e",
+      "salt": "29dd7c7ec5e73d2fed7347ae9e39b705",
+      "createdAt": "2026-10-17T22:46:39.226Z"
+    },
+    {
+      "id": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "email": "creator_1792277515651@vydeora.com",
+      "passwordHash": "e889d8dad561fb3b8a6dfef2f1ee57ad2d67cb8aac7a7d1a225f8b0c667791d935fb6577c4d7229052f94865fc8816f0dfb87f9f50ff4e6c882d2e0217325a30",
+      "salt": "7eb0ee51fce2686116d87657729a6c10",
+      "createdAt": "2026-10-17T22:51:55.979Z"
+    },
+    {
+      "id": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "email": "independent_1792277516389@vydeora.com",
+      "passwordHash": "f007b36a51034032af7db4ebab8b1ba29e673496350f54180d83020686ebc145261ec360729cd8d47c23c2dcbd84029bb6a30926187075a33d5fb6ac5d1a2709",
+      "salt": "4c4911a6861df4caf8eb6797dc11fbb0",
+      "createdAt": "2026-10-17T22:51:56.500Z"
+    },
+    {
+      "id": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "email": "creator_1792278127361@vydeora.com",
+      "passwordHash": "121a61ec9a0d689d5aa1dcea22c2cbc7df6f517ded3157327094df7537321f7ca8c1f37d190ac49f2be3a8af21aa08fec882361234bab6fd09d971e32470c9ba",
+      "salt": "50a4659e7d26f836c77c1c746bc424cf",
+      "createdAt": "2026-10-17T23:02:07.510Z"
+    },
+    {
+      "id": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "email": "independent_1792278127725@vydeora.com",
+      "passwordHash": "c2522d876bf311dd4fb94b68a2a7ee605859928514b0936b383c4fdc119348c9c1faa7c2d04bf7f7f73c1cc44e9be5306c8f504e84cccd29a6bd24a2d22ac30c",
+      "salt": "63ee6de75035dbfe4f1dd16a14855cbb",
+      "createdAt": "2026-10-17T23:02:07.835Z"
+    },
+    {
+      "id": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "email": "creator_1792278387286@vydeora.com",
+      "passwordHash": "c6228931d455cad8b8f1ae58ff95eb8625a69d6eae741f344c902fd7ec427256836da80b4d9670cf7acba18534135a9bfa8e02f71c09bfc88552a574b84b7e57",
+      "salt": "2f1bae74629c69b43bf05992d665e366",
+      "createdAt": "2026-10-17T23:06:27.446Z"
+    },
+    {
+      "id": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "email": "independent_1792278387734@vydeora.com",
+      "passwordHash": "882ff7d356589cffec42e758983b01fbbc90049c799078d9c78b7de8331695e7995f77f354e2e4652a9aa24b183e5f606e60873357d8a1f0c5f7ba23063d680a",
+      "salt": "db1d44533e99b6e09ec78801940baae9",
+      "createdAt": "2026-10-17T23:06:27.830Z"
+    },
+    {
+      "id": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "email": "creator_1792279585622@vydeora.com",
+      "passwordHash": "4aa3f41eff1c5d3d42abcfb2c73bd3382dd7e62782fa9ff0d11e1d94121766c0da2e98fd763f65d79d297f50974aaf76e4c215f5f559dd2f8118c4d9d584eb2c",
+      "salt": "608f2770b43f1433bd82d9b6d50754f4",
+      "createdAt": "2026-10-17T23:26:26.025Z"
+    },
+    {
+      "id": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "email": "independent_1792279586506@vydeora.com",
+      "passwordHash": "ac05d2947a29af4c369852a975d9c7a874fb99952a6df91c945f8cdaf20ec783224e537e934711f797e8c5cd88a5cfcae7962d441cecd31bc5c05153689a2c18",
+      "salt": "3a33cf037d0500daeb07b577a0c859b7",
+      "createdAt": "2026-10-17T23:26:26.638Z"
+    },
+    {
+      "id": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "email": "creator_1792279914596@vydeora.com",
+      "passwordHash": "5c78b8e985b275875d6fec367dc98be4c1b8c0c7a29b6fd0a762324c5e89bfb63b230e6f774bee8de93e8bd8c6e45cde3debf3cc2f042766a2caa968ecf26de4",
+      "salt": "9cf799cb681c117914b8302f68cc5d01",
+      "createdAt": "2026-10-17T23:31:54.941Z"
+    },
+    {
+      "id": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "email": "independent_1792279915335@vydeora.com",
+      "passwordHash": "f1dbc0b17e353134d3ea95e21a71d51edd38854950fcef80f0384c868b792a857559d82c3883b66430505012809d3c6d9ea45253405eaaee26deb7643ada2ae6",
+      "salt": "39664a2ea07911a1c748dd4926d30d3d",
+      "createdAt": "2026-10-17T23:31:55.470Z"
+    },
+    {
+      "id": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "email": "creator_1792279944632@vydeora.com",
+      "passwordHash": "df6709f5e56c147f87f59ea104265eb0d1b2e9b6edda13339e4e8653b044634644c5d5500b15a106ea4d3a5d3301af57f03dff3806776cb7124f32caa37d48c8",
+      "salt": "75e2f03e7f6ce734ad3bd0546d312720",
+      "createdAt": "2026-10-17T23:32:24.843Z"
+    },
+    {
+      "id": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "email": "independent_1792279945356@vydeora.com",
+      "passwordHash": "7d69d9cb38aa31672c485f6dcc85fc418a12d79c89be16c8154c62d5509f8a535b8c35b2aa94d5007e17b84a6ebd6da2be5933c46889491db5374f10841052e1",
+      "salt": "fcbdeaf803b5298504e3f079c8ea2ae9",
+      "createdAt": "2026-10-17T23:32:25.486Z"
+    },
+    {
+      "id": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "email": "creator_1792279984843@vydeora.com",
+      "passwordHash": "8910bbe0d4ce255b9fd0b3c1c405532c23e826dbab7db72aeede78e2691563c2e1434f8ca8e271063be66a1982fd9fc088590f5a92d3b017955f42cf97728178",
+      "salt": "5d571f8d2364a09b4b76b59e842d5890",
+      "createdAt": "2026-10-17T23:33:05.022Z"
+    },
+    {
+      "id": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "email": "independent_1792279985356@vydeora.com",
+      "passwordHash": "f5c66cb090f8bb46c46fb91fdcdd0a889fdf5924c89c5e39f142d94683436c130af84c4f82e79c389c8456aaeb83c5c3d46bdbeaad9a59c4bb54a8394f6889ab",
+      "salt": "53cf573a30139c31f59c9288761ac4fa",
+      "createdAt": "2026-10-17T23:33:05.478Z"
+    },
+    {
+      "id": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "email": "creator_1792280020018@vydeora.com",
+      "passwordHash": "7403c238665602e1a3f4ba94f8d522e982d3dba893cc93c7dac74b661105789fb1eae08aeebd29a081522be841130b6aa936434d6529039b516bc41dafc677ed",
+      "salt": "a4cf6e778ba2c9053d7a5c6bf6d67e31",
+      "createdAt": "2026-10-17T23:33:40.403Z"
+    },
+    {
+      "id": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "email": "independent_1792280021427@vydeora.com",
+      "passwordHash": "a15388460ed5836cb395fc575d96ec45876ee0fdf51e5537b19ae6c9398743abf173fc3aed7ec37d2911d02b6ef85b71e192f55f01e62d979e5ffee60bb9a226",
+      "salt": "a0a919810eda89247abfc3153abc4223",
+      "createdAt": "2026-10-17T23:33:41.650Z"
+    }
+  ],
+  "profiles": [
+    {
+      "userId": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "fullName": "Sophie Laurent",
+      "email": "creator_1792276460690@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:34:21.327Z",
+      "updatedAt": "2026-10-17T22:34:21.327Z"
+    },
+    {
+      "userId": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "fullName": "Sophie Laurent",
+      "email": "creator_1792276492598@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:34:52.769Z",
+      "updatedAt": "2026-10-17T22:34:52.769Z"
+    },
+    {
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792276548141@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-5758a297-d8f4-41c2-8646-e910d91148f6-1792276548320.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:35:48.279Z",
+      "updatedAt": "2026-10-17T22:35:48.323Z"
+    },
+    {
+      "userId": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792276548555@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:35:48.643Z",
+      "updatedAt": "2026-10-17T22:35:48.643Z"
+    },
+    {
+      "userId": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "fullName": "GNITOU",
+      "email": "jeffmaxwell@gmail.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:40:06.265Z",
+      "updatedAt": "2026-10-17T22:40:06.265Z"
+    },
+    {
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792277198735@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-bdca328b-2463-4b79-905d-234d98463f72-1792277198945.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:46:38.893Z",
+      "updatedAt": "2026-10-17T22:46:38.949Z"
+    },
+    {
+      "userId": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792277199129@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:46:39.226Z",
+      "updatedAt": "2026-10-17T22:46:39.226Z"
+    },
+    {
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792277515651@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4-1792277516089.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:51:55.979Z",
+      "updatedAt": "2026-10-17T22:51:56.096Z"
+    },
+    {
+      "userId": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792277516389@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T22:51:56.500Z",
+      "updatedAt": "2026-10-17T22:51:56.500Z"
+    },
+    {
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792278127361@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-a9ea5548-986a-47ff-a780-d6d898bcc567-1792278127562.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:02:07.510Z",
+      "updatedAt": "2026-10-17T23:02:07.566Z"
+    },
+    {
+      "userId": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792278127725@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:02:07.835Z",
+      "updatedAt": "2026-10-17T23:02:07.835Z"
+    },
+    {
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792278387286@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-397416e0-ef6b-483e-bae9-14fc78171e0b-1792278387509.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:06:27.446Z",
+      "updatedAt": "2026-10-17T23:06:27.514Z"
+    },
+    {
+      "userId": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792278387734@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:06:27.830Z",
+      "updatedAt": "2026-10-17T23:06:27.830Z"
+    },
+    {
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792279585622@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-b125373b-38d6-4f31-9081-22f6e1ce009a-1792279586174.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:26:26.025Z",
+      "updatedAt": "2026-10-17T23:26:26.180Z"
+    },
+    {
+      "userId": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792279586506@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:26:26.638Z",
+      "updatedAt": "2026-10-17T23:26:26.638Z"
+    },
+    {
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792279914596@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-3854589e-9a9e-462b-89ed-e174ef91ec5e-1792279915009.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:31:54.941Z",
+      "updatedAt": "2026-10-17T23:31:55.013Z"
+    },
+    {
+      "userId": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792279915335@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:31:55.470Z",
+      "updatedAt": "2026-10-17T23:31:55.470Z"
+    },
+    {
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792279944632@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-66a8e2a9-0017-415b-9131-67c0eea0b57f-1792279944947.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:32:24.843Z",
+      "updatedAt": "2026-10-17T23:32:24.953Z"
+    },
+    {
+      "userId": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792279945356@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:32:25.486Z",
+      "updatedAt": "2026-10-17T23:32:25.486Z"
+    },
+    {
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792279984843@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-45020ebf-551a-456c-b20d-fa8e4cc811a6-1792279985090.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:33:05.022Z",
+      "updatedAt": "2026-10-17T23:33:05.096Z"
+    },
+    {
+      "userId": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792279985356@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:33:05.478Z",
+      "updatedAt": "2026-10-17T23:33:05.478Z"
+    },
+    {
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "fullName": "Sophie Laurent-Dupond",
+      "email": "creator_1792280020018@vydeora.com",
+      "avatarUrl": "/uploads/avatars/avatar-921b00db-3eba-4a04-8993-55b533307ee0-1792280020607.png",
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:33:40.403Z",
+      "updatedAt": "2026-10-17T23:33:40.619Z"
+    },
+    {
+      "userId": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "fullName": "Marc Dupont",
+      "email": "independent_1792280021427@vydeora.com",
+      "avatarUrl": null,
+      "preferredLanguage": "fr",
+      "timeZone": "Europe/Paris",
+      "onboardingStatus": "completed",
+      "createdAt": "2026-10-17T23:33:41.650Z",
+      "updatedAt": "2026-10-17T23:33:41.650Z"
+    }
+  ],
+  "preferences": [
+    {
+      "userId": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:34:21.327Z"
+    },
+    {
+      "userId": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:34:52.769Z"
+    },
+    {
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:35:48.347Z"
+    },
+    {
+      "userId": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:35:48.643Z"
+    },
+    {
+      "userId": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:40:06.265Z"
+    },
+    {
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:46:38.978Z"
+    },
+    {
+      "userId": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:46:39.226Z"
+    },
+    {
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:51:56.162Z"
+    },
+    {
+      "userId": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T22:51:56.500Z"
+    },
+    {
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:02:07.593Z"
+    },
+    {
+      "userId": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:02:07.835Z"
+    },
+    {
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:06:27.549Z"
+    },
+    {
+      "userId": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:06:27.830Z"
+    },
+    {
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:26:26.283Z"
+    },
+    {
+      "userId": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:26:26.638Z"
+    },
+    {
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:31:55.055Z"
+    },
+    {
+      "userId": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:31:55.470Z"
+    },
+    {
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:32:25.020Z"
+    },
+    {
+      "userId": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:32:25.486Z"
+    },
+    {
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:33:05.142Z"
+    },
+    {
+      "userId": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:33:05.478Z"
+    },
+    {
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "fr",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:33:40.711Z"
+    },
+    {
+      "userId": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "defaultFormat": "9:16",
+      "preferredVoiceLang": "Français",
+      "emailNotifications": true,
+      "productUpdates": true,
+      "updatedAt": "2026-10-17T23:33:41.650Z"
+    }
+  ],
+  "entitlements": [
+    {
+      "userId": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:34:21.327Z"
+    },
+    {
+      "userId": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:34:52.769Z"
+    },
+    {
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:35:48.279Z"
+    },
+    {
+      "userId": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:35:48.643Z"
+    },
+    {
+      "userId": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:40:06.265Z"
+    },
+    {
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:46:38.893Z"
+    },
+    {
+      "userId": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:46:39.226Z"
+    },
+    {
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:51:55.979Z"
+    },
+    {
+      "userId": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T22:51:56.501Z"
+    },
+    {
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:02:07.510Z"
+    },
+    {
+      "userId": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:02:07.835Z"
+    },
+    {
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:06:27.446Z"
+    },
+    {
+      "userId": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:06:27.830Z"
+    },
+    {
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:26:26.025Z"
+    },
+    {
+      "userId": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "plan": "Gratuit",
+      "credits": 100,
+      "totalCredits": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:26:26.638Z"
+    },
+    {
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:31:54.942Z"
+    },
+    {
+      "userId": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:31:55.470Z"
+    },
+    {
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:32:24.843Z"
+    },
+    {
+      "userId": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:32:25.486Z"
+    },
+    {
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:33:05.022Z"
+    },
+    {
+      "userId": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:33:05.478Z"
+    },
+    {
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:33:40.403Z"
+    },
+    {
+      "userId": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "plan": "Gratuit",
+      "credits": 100,
+      "credits_balance": 100,
+      "totalCredits": 100,
+      "monthly_limit": 100,
+      "period": "mensuel",
+      "renewalDate": "2026-11-16T23:33:41.650Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1792280021904",
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "title": "5 Secrets TikTok Dévoilés [Version Finale]",
+      "duration": "0:60",
+      "status": "Script généré",
+      "statusClass": "badge-draft",
+      "date": "17 oct. 2026",
+      "category": "TikTok (9:16)",
+      "thumb": "assets/images/creator-card.jpg",
+      "script": {
+        "title": "5 Secrets TikTok Dévoilés",
+        "hook": "Arrête de scroller ! Voici comment exploser sur TikTok en 2026.",
+        "scenes": [
+          {
+            "sceneNumber": 1,
+            "title": "Accroche",
+            "visualDescription": "Gros plan dynamique",
+            "narration": "Arrête de scroller !",
+            "durationSeconds": 3
+          },
+          {
+            "sceneNumber": 2,
+            "title": "Secret 1",
+            "visualDescription": "Texte animé fluo",
+            "narration": "La rétention des 3 premières secondes.",
+            "durationSeconds": 20
+          },
+          {
+            "sceneNumber": 3,
+            "title": "Conclusion",
+            "visualDescription": "Plan selfie créateur",
+            "narration": "Abonne-toi pour la suite !",
+            "durationSeconds": 7
+          }
+        ],
+        "conclusion": "Abonne-toi dès aujourd'hui pour ne rien manquer !"
+      },
+      "createdAt": "2026-10-17T23:33:41.904Z",
+      "updatedAt": "2026-10-17T23:33:41.924Z"
+    },
+    {
+      "id": "proj-1792280021336",
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "script": null,
+      "createdAt": "2026-10-17T23:33:41.336Z"
+    },
+    {
+      "id": "proj-1792279985595",
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "title": "5 Secrets TikTok Dévoilés",
+      "duration": "0:60",
+      "status": "Script généré",
+      "statusClass": "badge-draft",
+      "date": "17 oct. 2026",
+      "category": "TikTok (9:16)",
+      "thumb": "assets/images/creator-card.jpg",
+      "script": null,
+      "createdAt": "2026-10-17T23:33:05.595Z"
+    },
+    {
+      "id": "proj-1792279985343",
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "script": null,
+      "createdAt": "2026-10-17T23:33:05.343Z"
+    },
+    {
+      "id": "proj-1792279945344",
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "script": null,
+      "createdAt": "2026-10-17T23:32:25.344Z"
+    },
+    {
+      "id": "proj-1792279915249",
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "script": null,
+      "createdAt": "2026-10-17T23:31:55.249Z"
+    },
+    {
+      "id": "proj-1792279586494",
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "createdAt": "2026-10-17T23:26:26.494Z"
+    },
+    {
+      "id": "proj-1792278387720",
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "createdAt": "2026-10-17T23:06:27.720Z"
+    },
+    {
+      "id": "proj-1792278127715",
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "createdAt": "2026-10-17T23:02:07.715Z"
+    },
+    {
+      "id": "proj-1792277516384",
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "createdAt": "2026-10-17T22:51:56.384Z"
+    },
+    {
+      "id": "proj-1792277199122",
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "createdAt": "2026-10-17T22:46:39.122Z"
+    },
+    {
+      "id": "proj-1792276548480",
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "title": "Secret Video User 1",
+      "duration": "1:15",
+      "status": "Terminée",
+      "statusClass": "badge-success",
+      "date": "17 oct. 2026",
+      "category": "TikTok | Shorts",
+      "thumb": "assets/images/creator-card.jpg",
+      "createdAt": "2026-10-17T22:35:48.480Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1792276461327",
+      "userId": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:34:21.327Z"
+    },
+    {
+      "id": "notif-1792276492769",
+      "userId": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:34:52.769Z"
+    },
+    {
+      "id": "notif-1792276548279",
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:35:48.279Z"
+    },
+    {
+      "id": "notif-1792276548643",
+      "userId": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:35:48.643Z"
+    },
+    {
+      "id": "notif-1792276806265",
+      "userId": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:40:06.265Z"
+    },
+    {
+      "id": "notif-1792277198894",
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:46:38.893Z"
+    },
+    {
+      "id": "notif-1792277199226",
+      "userId": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:46:39.226Z"
+    },
+    {
+      "id": "notif-1792277515979",
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:51:55.979Z"
+    },
+    {
+      "id": "notif-1792277516501",
+      "userId": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T22:51:56.500Z"
+    },
+    {
+      "id": "notif-1792278127510",
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:02:07.510Z"
+    },
+    {
+      "id": "notif-1792278127835",
+      "userId": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:02:07.835Z"
+    },
+    {
+      "id": "notif-1792278387446",
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:06:27.446Z"
+    },
+    {
+      "id": "notif-1792278387830",
+      "userId": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:06:27.830Z"
+    },
+    {
+      "id": "notif-1792279586025",
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:26:26.025Z"
+    },
+    {
+      "id": "notif-1792279586638",
+      "userId": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:26:26.638Z"
+    },
+    {
+      "id": "notif-1792279914942",
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:31:54.941Z"
+    },
+    {
+      "id": "notif-1792279915470",
+      "userId": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:31:55.470Z"
+    },
+    {
+      "id": "notif-1792279944843",
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:32:24.843Z"
+    },
+    {
+      "id": "notif-1792279945486",
+      "userId": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:32:25.486Z"
+    },
+    {
+      "id": "notif-1792279985022",
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:33:05.022Z"
+    },
+    {
+      "id": "notif-1792279985478",
+      "userId": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:33:05.478Z"
+    },
+    {
+      "id": "notif-1792280020403",
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:33:40.403Z"
+    },
+    {
+      "id": "notif-1792280021650",
+      "userId": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "title": "Bienvenue sur VYDEORA !",
+      "desc": "Vos 100 crédits de démarrage sont disponibles. Créez votre première vidéo avec notre Studio IA.",
+      "time": "À l'instant",
+      "unread": true,
+      "createdAt": "2026-10-17T23:33:41.650Z"
+    }
+  ],
+  "activity": [
+    {
+      "id": "act-1792280021905",
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "type": "project_created",
+      "description": "Création du projet \"5 Secrets TikTok Dévoilés\".",
+      "timestamp": "2026-10-17T23:33:41.904Z"
+    },
+    {
+      "id": "act-1792280021422",
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:33:41.336Z"
+    },
+    {
+      "id": "act-1792279985596",
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "type": "project_created",
+      "description": "Création du projet \"5 Secrets TikTok Dévoilés\".",
+      "timestamp": "2026-10-17T23:33:05.595Z"
+    },
+    {
+      "id": "act-1792279985343",
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:33:05.343Z"
+    },
+    {
+      "id": "act-1792279945345",
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:32:25.344Z"
+    },
+    {
+      "id": "act-1792279915330",
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:31:55.249Z"
+    },
+    {
+      "id": "act-1792279586496",
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:26:26.494Z"
+    },
+    {
+      "id": "act-1792278387722",
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:06:27.720Z"
+    },
+    {
+      "id": "act-1792278127717",
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T23:02:07.715Z"
+    },
+    {
+      "id": "act-1792277516385",
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T22:51:56.384Z"
+    },
+    {
+      "id": "act-1792277199124",
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T22:46:39.122Z"
+    },
+    {
+      "id": "act-1792276548546",
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "type": "project_created",
+      "description": "Création du projet \"Secret Video User 1\".",
+      "timestamp": "2026-10-17T22:35:48.480Z"
+    },
+    {
+      "id": "act-1792276461327",
+      "userId": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:34:21.327Z"
+    },
+    {
+      "id": "act-1792276492769",
+      "userId": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:34:52.769Z"
+    },
+    {
+      "id": "act-1792276548279",
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:35:48.279Z"
+    },
+    {
+      "id": "act-1792276548643",
+      "userId": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:35:48.643Z"
+    },
+    {
+      "id": "act-1792276806265",
+      "userId": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:40:06.265Z"
+    },
+    {
+      "id": "act-1792277198894",
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:46:38.893Z"
+    },
+    {
+      "id": "act-1792277199226",
+      "userId": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:46:39.226Z"
+    },
+    {
+      "id": "act-1792277515979",
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:51:55.979Z"
+    },
+    {
+      "id": "act-1792277516501",
+      "userId": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T22:51:56.500Z"
+    },
+    {
+      "id": "act-1792278127510",
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:02:07.510Z"
+    },
+    {
+      "id": "act-1792278127835",
+      "userId": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:02:07.835Z"
+    },
+    {
+      "id": "act-1792278387446",
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:06:27.446Z"
+    },
+    {
+      "id": "act-1792278387830",
+      "userId": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:06:27.830Z"
+    },
+    {
+      "id": "act-1792279586025",
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:26:26.025Z"
+    },
+    {
+      "id": "act-1792279586638",
+      "userId": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:26:26.638Z"
+    },
+    {
+      "id": "act-1792279914942",
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:31:54.941Z"
+    },
+    {
+      "id": "act-1792279915470",
+      "userId": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:31:55.470Z"
+    },
+    {
+      "id": "act-1792279944843",
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:32:24.843Z"
+    },
+    {
+      "id": "act-1792279945486",
+      "userId": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:32:25.486Z"
+    },
+    {
+      "id": "act-1792279985022",
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:33:05.022Z"
+    },
+    {
+      "id": "act-1792279985478",
+      "userId": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:33:05.478Z"
+    },
+    {
+      "id": "act-1792280020403",
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:33:40.403Z"
+    },
+    {
+      "id": "act-1792280021650",
+      "userId": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "type": "account_created",
+      "description": "Création du compte et attribution de 100 crédits de démarrage.",
+      "timestamp": "2026-10-17T23:33:41.650Z"
+    }
+  ],
+  "sessions": {
+    "1c634c746811c4c671af45a20d58150268d6b1b355b364c42a6d26d32a811d79": {
+      "userId": "4b09f6b8-466b-4ae1-a42f-e8623b2774f8",
+      "createdAt": 1792276461331,
+      "expiresAt": 1792881261331
+    },
+    "68fc387b805c5a3a9c15df57b719d67a149230c50b050602838ec313cc4eef4e": {
+      "userId": "767ae569-42eb-4a28-8c6a-c48470f0cce6",
+      "createdAt": 1792276492772,
+      "expiresAt": 1792881292772
+    },
+    "0b36085d3f0a6325d3296055ded0ed6b4d4f4ad7dfb7fd0e06802d137739f65f": {
+      "userId": "5758a297-d8f4-41c2-8646-e910d91148f6",
+      "createdAt": 1792276548455,
+      "expiresAt": 1792881348455
+    },
+    "be5a3bb6df447eaf3b9a87c05fa009a19b1ee3069db3af68c41bdabef9c9a6aa": {
+      "userId": "5b0797d2-9700-42dd-8b9e-61f2726dc291",
+      "createdAt": 1792276548647,
+      "expiresAt": 1792881348647
+    },
+    "c1aef61d2fe6e96dcfe6c5f70e9186a05260f2123262c3de9c3f34c08ff3d563": {
+      "userId": "527892b9-1d51-4350-9c98-a473d850b77a",
+      "createdAt": 1792276806270,
+      "expiresAt": 1792881606270
+    },
+    "c3e5d323ba6f230424d840702e99b1377f5eb1719c32c3c639d806010246c9b6": {
+      "userId": "bdca328b-2463-4b79-905d-234d98463f72",
+      "createdAt": 1792277199096,
+      "expiresAt": 1792881999096
+    },
+    "8ef6298019ac046514b75db66034978d71231b48361782d0cbac3d25d35dcaf8": {
+      "userId": "d421bb4f-07b4-4146-bdbe-f0176628bd78",
+      "createdAt": 1792277199231,
+      "expiresAt": 1792881999231
+    },
+    "f4a12309d282580a6816b3dc69f4795cc88fd3da597e21b34ab768cb3fbe39d3": {
+      "userId": "bcbbbc5a-d207-4cbf-b22b-da62c3a9d5a4",
+      "createdAt": 1792277516357,
+      "expiresAt": 1792882316357
+    },
+    "c1b2614f876a703ba293eca4d22ed4295279c6e30d1a9312cadf149b534ffd1d": {
+      "userId": "f90c46a5-75b4-4703-a587-90d6ebc31ce8",
+      "createdAt": 1792277516511,
+      "expiresAt": 1792882316511
+    },
+    "8a0f242bcfa50908391373ab3c455d354a865ec3ec64726f2602cbe9d46547fd": {
+      "userId": "a9ea5548-986a-47ff-a780-d6d898bcc567",
+      "createdAt": 1792278127689,
+      "expiresAt": 1792882927689
+    },
+    "26708b1082f6c8acd33917e48900f10fa33aa80a5c20419ed18fed44c31cc0ff": {
+      "userId": "a8115c44-a622-440e-82e5-d0ee49bb8d2c",
+      "createdAt": 1792278127843,
+      "expiresAt": 1792882927843
+    },
+    "b249399f698d8dd4e1e8da21ec5e1a60bbc3a3a1c1ffd192289fb599576026e7": {
+      "userId": "397416e0-ef6b-483e-bae9-14fc78171e0b",
+      "createdAt": 1792278387685,
+      "expiresAt": 1792883187685
+    },
+    "ff04959ba0547535dcb1db6aefa6c428302c321edc8706e8ac954dbfe76f450d": {
+      "userId": "05d288fd-fec7-4eb8-9be7-79be7ecbe185",
+      "createdAt": 1792278387835,
+      "expiresAt": 1792883187835
+    },
+    "4644553bcbf1b414d9203fee38b263cfe105c95e2f5167778926136e0cf3cab1": {
+      "userId": "b125373b-38d6-4f31-9081-22f6e1ce009a",
+      "createdAt": 1792279586449,
+      "expiresAt": 1792884386449
+    },
+    "dab2dc25a89037f7aca955e359c402b9276911d39c863c54ccfefe6216afc1c1": {
+      "userId": "657d31b4-330a-4d6e-9154-e84e89603db5",
+      "createdAt": 1792279586645,
+      "expiresAt": 1792884386645
+    },
+    "a261a0592f9664263fefc0643fb219db78288c5b50810b5fef90df2b0caa360e": {
+      "userId": "3854589e-9a9e-462b-89ed-e174ef91ec5e",
+      "createdAt": 1792279915206,
+      "expiresAt": 1792884715206
+    },
+    "161ad79aa96506abdfd3e3f399f80a7839e48dd619966f5c298fe1ad849aa4df": {
+      "userId": "fcb10288-3403-47b1-91e0-1c061c8affc4",
+      "createdAt": 1792279915479,
+      "expiresAt": 1792884715479
+    },
+    "20bf21992f7f94fc89c3012ad580a7297fc0b306e2bd1d0d33820d72f81dc648": {
+      "userId": "66a8e2a9-0017-415b-9131-67c0eea0b57f",
+      "createdAt": 1792279945269,
+      "expiresAt": 1792884745269
+    },
+    "9306cf59d58ab98a968690d999f78959e59889f30dee202a95ec75b0409bd168": {
+      "userId": "c50d0ac4-34f6-45a6-99bf-190fe762edca",
+      "createdAt": 1792279945494,
+      "expiresAt": 1792884745494
+    },
+    "8ada0174c9c5e35cab51c8246fafbbf6038aa266070b82d863aa0e6c0d6a6460": {
+      "userId": "45020ebf-551a-456c-b20d-fa8e4cc811a6",
+      "createdAt": 1792279985299,
+      "expiresAt": 1792884785299
+    },
+    "a3837bad8dc21011c0302ebf9d6ffa62a12a49a9cbd149fa6c29ee192be1379e": {
+      "userId": "b2bf8724-7bed-4417-a1d3-540cbde723cf",
+      "createdAt": 1792279985484,
+      "expiresAt": 1792884785484
+    },
+    "942acc8f6cd240ce1c86bbe52911eec6e61f84b71a53a6e66f31a3d4287d313e": {
+      "userId": "921b00db-3eba-4a04-8993-55b533307ee0",
+      "createdAt": 1792280021236,
+      "expiresAt": 1792884821236
+    },
+    "4e703d2e4b5609d0fde82c79ff2c8d359b341e291a69de78d1a0fb7714078c8f": {
+      "userId": "f64d54cd-7d79-40a8-a3e7-aec631a438eb",
+      "createdAt": 1792280021660,
+      "expiresAt": 1792884821660
+    }
+  }
+}
