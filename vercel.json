@@ -1,8 +1,30 @@
 {
   "version": 2,
+  "framework": null,
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "{css,js,assets,data}/**,*.html"
+    }
+  },
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/app",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/dashboard.html",
+      "destination": "/api/index.js"
+    },
+    {
+      "source": "/uploads/(.*)",
       "destination": "/api/index.js"
     }
   ]

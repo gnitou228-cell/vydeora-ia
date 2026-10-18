@@ -58,7 +58,8 @@ app.use('/uploads/avatars', express.static(avatarsStaticDir, {
 }));
 
 // Serve static frontend assets
-app.use(express.static(path.join(__dirname), {
+const rootStaticDir = fs.existsSync(path.join(__dirname, 'index.html')) ? __dirname : process.cwd();
+app.use(express.static(rootStaticDir, {
   etag: false,
   maxAge: 0
 }));
@@ -581,17 +582,23 @@ app.get(['/app', '/dashboard', '/dashboard.html'], (req, res) => {
     return res.redirect('/?auth=login&redirect=/app');
   }
   // Authenticated: serve dashboard
-  res.sendFile(path.join(__dirname, 'dashboard.html'));
+  const dashFile = fs.existsSync(path.join(__dirname, 'dashboard.html')) ? path.join(__dirname, 'dashboard.html') : path.join(process.cwd(), 'dashboard.html');
+  res.sendFile(dashFile);
 });
 
 // Root & Landing Page
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  const indexFile = fs.existsSync(path.join(__dirname, 'index.html')) ? path.join(__dirname, 'index.html') : path.join(process.cwd(), 'index.html');
+  res.sendFile(indexFile);
 });
 
-// Fallback
+// Fallback - strictly for SPA client routing, never mask missing asset files as HTML
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  if (req.path.includes('.') && !req.path.endsWith('.html')) {
+    return res.status(404).send('Asset not found');
+  }
+  const indexFile = fs.existsSync(path.join(__dirname, 'index.html')) ? path.join(__dirname, 'index.html') : path.join(process.cwd(), 'index.html');
+  res.sendFile(indexFile);
 });
 
 if (require.main === module) {
