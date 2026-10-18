@@ -390,14 +390,14 @@
 
   const BillingRates = {
     monthly: {
-      starter: { price: 15, subnote: '&nbsp;' },
-      pro: { price: 29, subnote: '&nbsp;' },
-      enterprise: { price: 99, subnote: '&nbsp;' }
+      starter: { price: '9 500', subnote: '&nbsp;' },
+      pro: { price: '19 000', subnote: '&nbsp;' },
+      enterprise: { price: '59 000', subnote: '&nbsp;' }
     },
     annual: {
-      starter: { price: 12, subnote: 'Facturé 144 € / an (économie de 36 €)' },
-      pro: { price: 23, subnote: 'Facturé 276 € / an (économie de 72 €)' },
-      enterprise: { price: 79, subnote: 'Facturé 948 € / an (économie de 240 €)' }
+      starter: { price: '7 500', subnote: 'Facturé 90 000 FCFA / an (économie de 24 000 FCFA)' },
+      pro: { price: '15 000', subnote: 'Facturé 180 000 FCFA / an (économie de 48 000 FCFA)' },
+      enterprise: { price: '47 000', subnote: 'Facturé 564 000 FCFA / an (économie de 144 000 FCFA)' }
     }
   };
 

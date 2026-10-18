@@ -21,3 +21,4 @@ test-screenshots/
 Thumbs.db
 
 .vercel
+uploads/avatars/avatar-*

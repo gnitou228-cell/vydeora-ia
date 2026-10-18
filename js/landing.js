@@ -11,17 +11,15 @@
   const PricingData = {
     monthly: {
       free: { price: '0', period: '/mois' },
-      starter: { price: '12', period: '/mois' },
-      creator: { price: '29', period: '/mois' },
-      pro: { price: '59', period: '/mois' },
-      enterprise: { price: '149', period: '/mois' }
+      starter: { price: '9 500', period: '/mois' },
+      pro: { price: '19 000', period: '/mois' },
+      enterprise: { price: '59 000', period: '/mois' }
     },
     annual: {
       free: { price: '0', period: '/mois' },
-      starter: { price: '9', period: '/mois (facturé annuellement)' },
-      creator: { price: '22', period: '/mois (facturé annuellement)' },
-      pro: { price: '45', period: '/mois (facturé annuellement)' },
-      enterprise: { price: '119', period: '/mois (facturé annuellement)' }
+      starter: { price: '7 500', period: '/mois (facturé annuellement)' },
+      pro: { price: '15 000', period: '/mois (facturé annuellement)' },
+      enterprise: { price: '47 000', period: '/mois (facturé annuellement)' }
     }
   };
 
