@@ -29,6 +29,7 @@ const db = require('./server/db');
 const auth = require('./server/auth');
 const avatar = require('./server/avatar');
 const ai = require('./server/ai');
+const tts = require('./server/tts');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -53,6 +54,19 @@ try {
 } catch (e) {}
 
 app.use('/uploads/avatars', express.static(avatarsStaticDir, {
+  etag: false,
+  maxAge: '1h'
+}));
+
+// Serve uploaded audio voice-overs
+const audioStaticDir = isVercelEnv ? path.join('/tmp', 'audio') : path.join(__dirname, 'uploads', 'audio');
+try {
+  if (!fs.existsSync(audioStaticDir)) {
+    fs.mkdirSync(audioStaticDir, { recursive: true });
+  }
+} catch (e) {}
+
+app.use('/uploads/audio', express.static(audioStaticDir, {
   etag: false,
   maxAge: '1h'
 }));
@@ -540,6 +554,89 @@ app.post('/api/ai/generate-script', auth.requireAuth, async (req, res) => {
       success: false,
       code: err.code || 'AI_ERROR',
       error: err.message || 'Une erreur est survenue lors de la génération du script par l\'IA.'
+    });
+  }
+});
+
+// 12. Get AI Voice Catalog
+app.get('/api/ai/voices', (req, res) => {
+  return res.json({
+    success: true,
+    voices: Object.values(tts.VOICES)
+  });
+});
+
+// 13. Generate AI Voice-over
+app.post('/api/ai/generate-voice', auth.requireAuth, async (req, res) => {
+  try {
+    const { text, voiceId, speed, projectId, isDemo } = req.body;
+
+    if (!text || typeof text !== 'string' || text.trim().length < 3) {
+      return res.status(400).json({
+        success: false,
+        error: 'Veuillez fournir le texte de narration à vocaliser (au moins 3 caractères).'
+      });
+    }
+
+    // Voice generation costs 15 credits
+    const VOICE_COST = 15;
+
+    // Check credits upfront before invoking external service
+    const userEntitlement = db.getEntitlement(req.userId);
+    const availableCredits = userEntitlement.credits !== undefined ? userEntitlement.credits : (userEntitlement.credits_balance || 0);
+    if (!isDemo && availableCredits < VOICE_COST) {
+      return res.status(402).json({
+        success: false,
+        code: 'INSUFFICIENT_CREDITS',
+        error: `Crédits insuffisants pour générer la voix off. Solde actuel : ${availableCredits}, requis : ${VOICE_COST}`
+      });
+    }
+
+    // Call TTS Service
+    const ttsResult = await tts.generateVoiceOver({
+      text: text.trim(),
+      voiceId: voiceId || 'thomas',
+      speed: speed || 1.0,
+      projectId: projectId || req.userId,
+      isDemo: Boolean(isDemo)
+    });
+
+    // Deduct credits ONLY after generation successfully completes
+    let updatedEntitlement = userEntitlement;
+    if (!isDemo) {
+      updatedEntitlement = db.deductCredits(req.userId, VOICE_COST);
+    }
+
+    // Update project with audioUrl and voice if projectId exists
+    let project = null;
+    if (projectId) {
+      project = db.updateProject(req.userId, projectId, {
+        audioUrl: ttsResult.audioUrl,
+        voice: ttsResult.voice.id,
+        status: 'Audio prêt',
+        statusClass: 'badge-info'
+      });
+    }
+
+    return res.status(201).json({
+      success: true,
+      message: 'Voix off IA générée avec succès.',
+      audioUrl: ttsResult.audioUrl,
+      durationSeconds: ttsResult.durationSeconds,
+      creditsRemaining: updatedEntitlement.credits,
+      creditsDeducted: isDemo ? 0 : VOICE_COST,
+      voice: ttsResult.voice,
+      provider: ttsResult.provider,
+      project
+    });
+
+  } catch (err) {
+    console.error('AI Voice generation error:', err.message);
+    const statusCode = err.status || (err.code === 'MISSING_API_KEY' ? 503 : 500);
+    return res.status(statusCode).json({
+      success: false,
+      code: err.code || 'VOICE_GENERATION_ERROR',
+      error: err.message || 'Une erreur est survenue lors de la génération de la voix off.'
     });
   }
 });

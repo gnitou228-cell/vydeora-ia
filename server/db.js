@@ -290,15 +290,17 @@ const db = {
     const dbData = readDb();
     let ent = dbData.entitlements.find(e => e.userId === userId);
     if (!ent) {
-      ent = { userId: userId, plan: 'Gratuit', credits: 100, totalCredits: 100, period: 'mensuel' };
+      ent = { userId: userId, plan: 'Gratuit', credits: 100, credits_balance: 100, totalCredits: 100, period: 'mensuel' };
       dbData.entitlements.push(ent);
     }
-    if (ent.credits < amount) {
-      const err = new Error(`Crédits insuffisants. Solde actuel : ${ent.credits}, requis : ${amount}`);
+    const currentCredits = ent.credits !== undefined ? ent.credits : (ent.credits_balance || 0);
+    if (currentCredits < amount) {
+      const err = new Error(`Crédits insuffisants. Solde actuel : ${currentCredits}, requis : ${amount}`);
       err.code = 'INSUFFICIENT_CREDITS';
       throw err;
     }
-    ent.credits -= amount;
+    ent.credits = currentCredits - amount;
+    ent.credits_balance = ent.credits;
     writeDb(dbData);
     return ent;
   },
@@ -323,6 +325,8 @@ const db = {
       category: projectData.category || 'TikTok | Shorts',
       thumb: projectData.thumb || 'assets/images/creator-card.jpg',
       script: projectData.script || null,
+      audioUrl: projectData.audioUrl || null,
+      voice: projectData.voice || null,
       createdAt: now
     };
 
@@ -360,6 +364,8 @@ const db = {
     if (updateData.category !== undefined) project.category = updateData.category;
     if (updateData.thumb !== undefined) project.thumb = updateData.thumb;
     if (updateData.script !== undefined) project.script = updateData.script;
+    if (updateData.audioUrl !== undefined) project.audioUrl = updateData.audioUrl;
+    if (updateData.voice !== undefined) project.voice = updateData.voice;
     project.updatedAt = new Date().toISOString();
 
     writeDb(dbData);

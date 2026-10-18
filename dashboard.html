@@ -721,43 +721,169 @@
 
               <!-- Step 3: Voix & Langue -->
               <div class="studio-step-pane" id="stepPane3" style="display:none;">
-                <h3 style="margin-bottom:12px;">Étape 3 : Choisissez la voix de narration IA</h3>
-                <p style="margin-bottom:18px;">Plus de 50 voix neurales ultra-réalistes dotées d'inflexions naturelles.</p>
-                
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px;">
-                  <div class="card" style="padding:14px; border-color:var(--primary-light); background:rgba(99,102,241,0.1); cursor:pointer;">
-                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;">
-                      <div class="user-avatar-circle" style="background:linear-gradient(135deg, #10B981, #059669); width:32px; height:32px;">TH</div>
-                      <div>
-                        <div style="font-weight:700; font-size:0.9rem;">Thomas (Recommandé)</div>
-                        <div style="font-size:0.75rem; color:var(--text-muted);">Français (France) — Énergique</div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:8px;">
+                  <div>
+                    <h3 style="margin-bottom:4px;">Étape 3 : Voix off IA ultra-réaliste</h3>
+                    <p style="margin-bottom:0; color:var(--text-secondary); font-size:0.88rem;">Sélectionnez votre narrateur, écoutez un extrait de démonstration et générez la voix complète de votre script.</p>
+                  </div>
+                  <span class="badge badge-draft" id="studioVoiceBadge">Voix en attente</span>
+                </div>
+
+                <!-- Voice Selection Grid (4 persona cards) -->
+                <div id="studioVoiceCardsGrid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:12px; margin-bottom:18px;">
+                  
+                  <!-- Voice 1: Thomas -->
+                  <div class="card voice-select-card active" data-voice-id="thomas" style="padding:14px; border:2px solid var(--primary-light); background:rgba(99,102,241,0.1); border-radius:var(--border-radius-md); cursor:pointer; transition:all 0.2s ease;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">
+                      <div style="display:flex; align-items:center; gap:10px;">
+                        <div class="user-avatar-circle" style="background:linear-gradient(135deg, #10B981, #059669); width:36px; height:36px; font-weight:700;">TH</div>
+                        <div>
+                          <div style="font-weight:700; font-size:0.92rem; color:#FFFFFF;">Thomas <span style="font-size:0.7rem; background:rgba(16,185,129,0.2); color:#34D399; padding:2px 6px; border-radius:4px; margin-left:4px;">Recommandé</span></div>
+                          <div style="font-size:0.75rem; color:var(--text-muted);">Français (France) — Énergique</div>
+                        </div>
                       </div>
+                      <span class="voice-check-icon" style="color:var(--primary-light); font-size:1.1rem; font-weight:bold;">✓</span>
                     </div>
-                    <div style="font-size:0.78rem; color:var(--text-secondary);">Idéal pour le storytelling captivant et les formats TikTok.</div>
+                    <p style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:10px; line-height:1.4;">Idéal pour les formats rythmés TikTok, Shorts et Reels.</p>
+                    <button type="button" class="btn btn-secondary btn-sm btn-preview-voice" data-voice-id="thomas" style="width:100%; justify-content:center; font-size:0.76rem; padding:6px 10px;">
+                      <span>▶️ Écouter un extrait</span>
+                    </button>
                   </div>
 
-                  <div class="card" style="padding:14px; cursor:pointer;">
-                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;">
-                      <div class="user-avatar-circle" style="background:linear-gradient(135deg, #EC4899, #8B5CF6); width:32px; height:32px;">SA</div>
-                      <div>
-                        <div style="font-weight:700; font-size:0.9rem;">Sarah</div>
-                        <div style="font-size:0.75rem; color:var(--text-muted);">Français (France) — Chaleureuse</div>
+                  <!-- Voice 2: Sarah -->
+                  <div class="card voice-select-card" data-voice-id="sarah" style="padding:14px; border:1px solid var(--border-subtle); background:rgba(255,255,255,0.03); border-radius:var(--border-radius-md); cursor:pointer; transition:all 0.2s ease;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">
+                      <div style="display:flex; align-items:center; gap:10px;">
+                        <div class="user-avatar-circle" style="background:linear-gradient(135deg, #EC4899, #8B5CF6); width:36px; height:36px; font-weight:700;">SA</div>
+                        <div>
+                          <div style="font-weight:700; font-size:0.92rem; color:#FFFFFF;">Sarah</div>
+                          <div style="font-size:0.75rem; color:var(--text-muted);">Français (France) — Chaleureuse</div>
+                        </div>
                       </div>
+                      <span class="voice-check-icon" style="display:none; color:var(--primary-light); font-size:1.1rem; font-weight:bold;">✓</span>
                     </div>
-                    <div style="font-size:0.78rem; color:var(--text-secondary);">Parfaite pour les tutoriels et vidéos de formation.</div>
+                    <p style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:10px; line-height:1.4;">Parfaite pour les récits captivants, tutoriels et storytelling.</p>
+                    <button type="button" class="btn btn-secondary btn-sm btn-preview-voice" data-voice-id="sarah" style="width:100%; justify-content:center; font-size:0.76rem; padding:6px 10px;">
+                      <span>▶️ Écouter un extrait</span>
+                    </button>
                   </div>
 
-                  <div class="card" style="padding:14px; cursor:pointer;">
-                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:6px;">
-                      <div class="user-avatar-circle" style="background:linear-gradient(135deg, #F59E0B, #D97706); width:32px; height:32px;">LU</div>
-                      <div>
-                        <div style="font-weight:700; font-size:0.9rem;">Lucas</div>
-                        <div style="font-size:0.75rem; color:var(--text-muted);">Français (Canada) — Professionnel</div>
+                  <!-- Voice 3: Lucas -->
+                  <div class="card voice-select-card" data-voice-id="lucas" style="padding:14px; border:1px solid var(--border-subtle); background:rgba(255,255,255,0.03); border-radius:var(--border-radius-md); cursor:pointer; transition:all 0.2s ease;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">
+                      <div style="display:flex; align-items:center; gap:10px;">
+                        <div class="user-avatar-circle" style="background:linear-gradient(135deg, #F59E0B, #D97706); width:36px; height:36px; font-weight:700;">LU</div>
+                        <div>
+                          <div style="font-weight:700; font-size:0.92rem; color:#FFFFFF;">Lucas</div>
+                          <div style="font-size:0.75rem; color:var(--text-muted);">Français (Canada) — Posé</div>
+                        </div>
                       </div>
+                      <span class="voice-check-icon" style="display:none; color:var(--primary-light); font-size:1.1rem; font-weight:bold;">✓</span>
                     </div>
-                    <div style="font-size:0.78rem; color:var(--text-secondary);">Adapté aux vidéos business et présentations d'entreprises.</div>
+                    <p style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:10px; line-height:1.4;">Adapté aux vidéos business, finance et analyses.</p>
+                    <button type="button" class="btn btn-secondary btn-sm btn-preview-voice" data-voice-id="lucas" style="width:100%; justify-content:center; font-size:0.76rem; padding:6px 10px;">
+                      <span>▶️ Écouter un extrait</span>
+                    </button>
+                  </div>
+
+                  <!-- Voice 4: Emma -->
+                  <div class="card voice-select-card" data-voice-id="emma" style="padding:14px; border:1px solid var(--border-subtle); background:rgba(255,255,255,0.03); border-radius:var(--border-radius-md); cursor:pointer; transition:all 0.2s ease;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px;">
+                      <div style="display:flex; align-items:center; gap:10px;">
+                        <div class="user-avatar-circle" style="background:linear-gradient(135deg, #6366F1, #3B82F6); width:36px; height:36px; font-weight:700;">EM</div>
+                        <div>
+                          <div style="font-weight:700; font-size:0.92rem; color:#FFFFFF;">Emma</div>
+                          <div style="font-size:0.75rem; color:var(--text-muted);">Français (France) — Vente & Pub</div>
+                        </div>
+                      </div>
+                      <span class="voice-check-icon" style="display:none; color:var(--primary-light); font-size:1.1rem; font-weight:bold;">✓</span>
+                    </div>
+                    <p style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:10px; line-height:1.4;">Optimale pour l'e-commerce, annonces virales et hooks.</p>
+                    <button type="button" class="btn btn-secondary btn-sm btn-preview-voice" data-voice-id="emma" style="width:100%; justify-content:center; font-size:0.76rem; padding:6px 10px;">
+                      <span>▶️ Écouter un extrait</span>
+                    </button>
+                  </div>
+
+                </div>
+
+                <!-- Voice Parameters & Controls -->
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; background:rgba(255,255,255,0.02); border:1px solid var(--border-subtle); border-radius:var(--border-radius-md); padding:16px; margin-bottom:18px;">
+                  <div>
+                    <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Vitesse de lecture (Débit) :</label>
+                    <select id="studioVoiceSpeedSelect" style="width:100%; padding:10px;">
+                      <option value="0.9">0.9x — Posé & Explicatif</option>
+                      <option value="1.0" selected>1.0x — Standard naturel (Recommandé)</option>
+                      <option value="1.15">1.15x — Rythmé & Dynamique (Idéal TikTok)</option>
+                      <option value="1.25">1.25x — Très rapide & Compressé</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Volume de sortie :</label>
+                    <div style="display:flex; align-items:center; gap:10px; height:40px;">
+                      <span style="font-size:1rem;">🔈</span>
+                      <input type="range" id="studioVoiceVolumeRange" min="0" max="100" value="90" style="flex:1;">
+                      <span style="font-size:0.8rem; color:var(--text-muted); width:32px;" id="studioVoiceVolumeVal">90%</span>
+                    </div>
+                  </div>
+                  <div>
+                    <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Estimation de narration :</label>
+                    <div style="font-size:0.85rem; color:var(--text-secondary); line-height:1.4; padding-top:4px;">
+                      <span id="studioNarrationWordCount">0 mot</span> • <span id="studioNarrationEstDuration">~0s</span>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Alert container for missing API key or credit balance warning -->
+                <div id="studioStep3Alert" style="display:none; margin-bottom:16px;"></div>
+
+                <!-- Voice Generation Trigger Box -->
+                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; background:rgba(99,102,241,0.05); border:1px solid rgba(99,102,241,0.25); border-radius:var(--border-radius-md); padding:16px; margin-bottom:18px;">
+                  <div>
+                    <div style="font-weight:700; font-size:0.95rem; color:#FFFFFF; margin-bottom:4px;">Générer la voix off complète</div>
+                    <div style="font-size:0.8rem; color:var(--text-secondary);">Assemble toutes les scènes de votre script en un enregistrement audio haute fidélité.</div>
+                  </div>
+                  <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <button type="button" class="btn btn-secondary btn-sm" id="studioVoiceDemoBtn">
+                      <span>🧪 Aperçu d'essai (gratuit)</span>
+                    </button>
+                    <button type="button" class="btn btn-primary" id="studioVoiceGenBtn">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                      <span>Générer la voix off IA (15 crédits)</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Generated Audio Player Card (Shown upon successful generation) -->
+                <div id="studioAudioPlayerCard" style="display:none; background:linear-gradient(135deg, rgba(16,185,129,0.08) 0%, rgba(17,24,39,0.95) 100%); border:1px solid rgba(16,185,129,0.3); border-radius:var(--border-radius-lg); padding:20px; margin-top:14px;">
+                  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+                    <div style="display:flex; align-items:center; gap:8px;">
+                      <span style="font-size:1.2rem;">🎙️</span>
+                      <strong style="font-size:0.95rem; color:#FFFFFF;">Voix off générée avec succès</strong>
+                      <span class="badge badge-success" id="studioAudioBadge">Audio prêt</span>
+                    </div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);" id="studioAudioMetaText">
+                      Fichier audio synchronisé
+                    </div>
+                  </div>
+
+                  <audio id="studioAudioElement" preload="auto" style="display:none;"></audio>
+
+                  <!-- Custom Player Interface -->
+                  <div style="display:flex; align-items:center; gap:14px; background:rgba(0,0,0,0.35); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:12px 16px;">
+                    <button type="button" id="studioAudioMainPlayBtn" class="btn btn-primary btn-sm" style="width:40px; height:40px; border-radius:50%; padding:0; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+                      <span id="studioAudioPlayIcon" style="font-size:1rem; margin-left:2px;">▶</span>
+                    </button>
+
+                    <div style="flex:1;">
+                      <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:var(--text-muted); margin-bottom:6px;">
+                        <span id="studioAudioCurrentTime">0:00</span>
+                        <span id="studioAudioTotalDuration">0:00</span>
+                      </div>
+                      <input type="range" id="studioAudioSeekSlider" min="0" max="100" value="0" style="width:100%; height:6px; accent-color:var(--accent-emerald); cursor:pointer;">
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
               <!-- Step 4: Style Visuel -->

@@ -322,6 +322,60 @@ async function runTests() {
 
     console.log('  TEST F PASSED COMPLETELY!\n');
 
+    // ========================================================================
+    // TEST G: AI VOICE GENERATION (TTS) & PERSISTENCE & AUDIO SERVING
+    // ========================================================================
+    console.log('--- TEST G: AI VOICE-OVER GENERATION (TTS) & AUDIO SERVING ---');
+
+    // 1. Unauthenticated /api/ai/generate-voice rejected
+    const unauthVoice = await request('POST', '/api/ai/generate-voice', { text: 'Test narration' });
+    assert(unauthVoice.status === 401, 'Unauthenticated /api/ai/generate-voice rejected with 401');
+
+    // 2. Reject empty text with 400
+    const emptyVoice = await request('POST', '/api/ai/generate-voice', { text: '   ' }, user1NewCookie);
+    assert(emptyVoice.status === 400, 'Voice generator rejects empty text with 400');
+
+    // 3. GET /api/ai/voices returns catalog
+    const voicesRes = await request('GET', '/api/ai/voices');
+    assert(voicesRes.status === 200, 'GET /api/ai/voices returns 200');
+    assert(voicesRes.body.voices && voicesRes.body.voices.length >= 4, 'Catalog contains at least 4 distinct voices');
+
+    // 4. Real voice generation without key returns HTTP 503 and MISSING_API_KEY
+    const noKeyVoice = await request('POST', '/api/ai/generate-voice', {
+      text: 'Arrête de scroller tout de suite !',
+      voiceId: 'thomas',
+      isDemo: false
+    }, user1NewCookie);
+    assert(noKeyVoice.status === 503, 'Voice generator returns HTTP 503 when API key is missing');
+    assert(noKeyVoice.body.code === 'MISSING_API_KEY', 'Error payload explicitly returns code MISSING_API_KEY');
+
+    // 5. Demo mode voice generation succeeds and produces playable audio
+    const demoVoice = await request('POST', '/api/ai/generate-voice', {
+      text: 'Arrête de scroller tout de suite si tu veux exploser sur TikTok !',
+      voiceId: 'thomas',
+      projectId: scriptProjectId,
+      isDemo: true
+    }, user1NewCookie);
+    assert(demoVoice.status === 201, 'Demo mode voice generation returns HTTP 201');
+    assert(demoVoice.body.audioUrl && demoVoice.body.audioUrl.startsWith('/uploads/audio/'), 'Audio URL points to generated audio file');
+    assert(demoVoice.body.project && demoVoice.body.project.status === 'Audio prêt', 'Project status updated to "Audio prêt"');
+
+    // 6. Generated audio file is served via HTTP 200
+    const audioServeRes = await request('GET', demoVoice.body.audioUrl);
+    assert(audioServeRes.status === 200, 'Generated audio file is accessible and served with HTTP 200');
+
+    // 7. Verify credits are protected when generation fails
+    const user1ProfileBefore = await request('GET', '/api/auth/me', null, user1NewCookie);
+    const creditsBefore = user1ProfileBefore.body.entitlement.credits;
+    const failedAttempt = await request('POST', '/api/ai/generate-voice', {
+      text: 'Échec test',
+      isDemo: false
+    }, user1NewCookie);
+    const user1ProfileAfter = await request('GET', '/api/auth/me', null, user1NewCookie);
+    assert(user1ProfileAfter.body.entitlement.credits === creditsBefore, 'Credits are protected and not deducted if API key is missing');
+
+    console.log('  TEST G PASSED COMPLETELY!\n');
+
     console.log('\n======================================================');
     console.log(`🎉 ALL TESTS PASSED! (${testsPassed} tests passed, 0 failed)`);
     console.log('======================================================');
